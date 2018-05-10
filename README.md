@@ -9,11 +9,16 @@ duplexpair
 
 Make a full duplex stream with 2 Duplex endpoints.
 
+**Note:**
+
+This is a fork of `duplexpair`, changed to use the "native" `Duplex` stream that is part
+of Node.JS instead of the version from the `readable-stream` package.
+
 Install:
-`npm install duplexpair`
+`npm install native-duplexpair`
 
 ```js
-const DuplexPair = require('duplexpair');
+const DuplexPair = require('native-duplexpair');
 
 const { socket1, socket2 } = new DuplexPair();
 
