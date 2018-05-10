@@ -1,14 +1,11 @@
 {
-  "name": "duplexpair",
-  "version": "1.0.1",
-  "description": "Make a full duplex stream with 2 Duplex endpoints",
+  "name": "native-duplexpair",
+  "version": "1.0.0",
+  "description": "Make a full duplex stream with 2 Duplex endpoints, using the native version of `Duplex`",
   "engine": ">=4.0.0",
   "main": "index.js",
   "directories": {
     "test": "test"
-  },
-  "dependencies": {
-    "readable-stream": "^2.3.3"
   },
   "devDependencies": {
     "mocha": "^4.0.1",
@@ -19,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/addaleax/duplexpair.git"
+    "url": "git+https://github.com/tediousjs/native-duplexpair.git"
   },
   "keywords": [
     "duplex",
@@ -30,7 +27,7 @@
   "author": "Anna Henningsen <anna@addaleax.net>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/addaleax/duplexpair/issues"
+    "url": "https://github.com/tediousjs/native-duplexpair/issues"
   },
-  "homepage": "https://github.com/addaleax/duplexpair#readme"
+  "homepage": "https://github.com/tediousjs/native-duplexpair#readme"
 }
