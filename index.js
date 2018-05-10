@@ -1,5 +1,5 @@
 'use strict';
-const Duplex = require('readable-stream').Duplex;
+const Duplex = require('stream').Duplex;
 
 const kCallback = Symbol('Callback');
 const kOtherSide = Symbol('Other');
