@@ -1,11 +1,11 @@
 duplexpair
 ==============
 
-[![NPM Version](https://img.shields.io/npm/v/duplexpair.svg?style=flat)](https://npmjs.org/package/duplexpair)
-[![NPM Downloads](https://img.shields.io/npm/dm/duplexpair.svg?style=flat)](https://npmjs.org/package/duplexpair)
-[![Build Status](https://travis-ci.org/addaleax/duplexpair.svg?style=flat&branch=master)](https://travis-ci.org/addaleax/duplexpair?branch=master)
-[![Coverage Status](https://coveralls.io/repos/addaleax/duplexpair/badge.svg?branch=master)](https://coveralls.io/r/addaleax/duplexpair?branch=master)
-[![Dependency Status](https://david-dm.org/addaleax/duplexpair.svg?style=flat)](https://david-dm.org/addaleax/duplexpair)
+[![NPM Version](https://img.shields.io/npm/v/native-duplexpair.svg?style=flat)](https://npmjs.org/package/native-duplexpair)
+[![NPM Downloads](https://img.shields.io/npm/dm/native-duplexpair.svg?style=flat)](https://npmjs.org/package/native-duplexpair)
+[![Build Status](https://travis-ci.org/tediousjs/native-duplexpair.svg?style=flat&branch=master)](https://travis-ci.org/tediousjs/native-duplexpair?branch=master)
+[![Coverage Status](https://coveralls.io/repos/tediousjs/native-duplexpair/badge.svg?branch=master)](https://coveralls.io/r/tediousjs/native-duplexpair?branch=master)
+[![Dependency Status](https://david-dm.org/tediousjs/native-duplexpair.svg?style=flat)](https://david-dm.org/tediousjs/native-duplexpair)
 
 Make a full duplex stream with 2 Duplex endpoints.
 
