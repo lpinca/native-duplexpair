@@ -4,7 +4,7 @@ const DuplexPair = require('../');
 const assert = require('assert');
 
 describe('DuplexPair', function() {
-  it('passed data through', function() {
+  it('passes data through', function() {
     const pair = new DuplexPair({ encoding: 'utf8' });
     pair.socket1.write('Hello');
     assert.strictEqual(pair.socket1.read(), null);
@@ -17,5 +17,25 @@ describe('DuplexPair', function() {
     assert.strictEqual(pair.socket2.read(), null);
     pair.socket2.end();
     assert.strictEqual(pair.socket1.read(), null);
+  });
+
+  it('does not deadlock when writing empty chunks', function(done) {
+    const pair = new DuplexPair({ encoding: 'utf8' });
+
+    pair.socket2.resume();
+    pair.socket2.on('end', function() {
+      pair.socket2.write('Hello');
+      pair.socket2.write('');
+      pair.socket2.end();
+    });
+
+    pair.socket1.on('data', function(chunk) {
+      assert.strictEqual(chunk, 'Hello');
+    });
+    pair.socket1.on('end', function() {
+      done();
+    });
+
+    pair.socket1.end();
   });
 });
